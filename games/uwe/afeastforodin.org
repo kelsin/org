@@ -7,5 +7,41 @@
      Cottage Garden
    * I've played 2 times
 ** Goals
+   Cover up spaces on your home and exploration boards so you have a good score
+
+   You get points for:
+   * Ships and emigration
+   * Covering board spaces to avoid negatives
+   * The sheds, long houses and stone houses
+   * Points for sheep and cattle
+   * Upgraded goods can be worth points
 ** Structure
+*** Rounds
+    7 Rounds where each round has:
+      1. A New Viking
+      2. Harvest
+      3. Exploration Boards
+      4. Draw a New Weapon
+      5. Actions
+         Main action taking time!
+      6. Determine starting player
+      7. Income
+         Right before this you setup your board
+      8. Animal Breeding
+      9. Feast
+      10. Bonus
+      11. Update and Add New Mountain Strips
+      12. Remove Vikings
+*** Anytime Actions
+    * Placing goods on home, house, or exploration boards
+    * Buying ships
+    * Changing silver
+    * Arming
+    * Occupations (cards might give you an action)
 ** Setup
+   * One light brown occupation to each player (all other light brown cards are
+     removed from the game)
+   * Each player gets 1 bow, 1 snare, 1 spear (all cards), and 1 mead (tile)
+   * Each player gets their vikings
+   * Setup mountain strips
+   * Setup exploration boards
