@@ -11,5 +11,56 @@
      wealth track, and possibly buy more steps
    * Buying more steps on the track is a requirement for winning
 ** Structure
+*** 9 Rounds / 3 Phases each
+**** Harvest Phase
+     * Each player gets a new field
+     * Each player gets vegetables from planted fields
+     * Each player removes any newly-emptied fields
+**** Card Phase
+     * Create a new draw pile from the older one + discard pile
+     * Deal each player 4 cards
+     * Starting player takes one card and places it into a common area
+     * Then in clockwise order (starting with the next player) each player may
+       either:
+       * Place a card into the common area
+       * Play a card from his hand, and one from the common area to his player
+         area
+         * Once this is done that player is done with this phase
+         * Any remaining cards in their hand go to the common area
+     * Once only one player remains, they MUST choose option 2 and they become
+       the starting player
+     * Special 2 player rule: at the start of his turn a player may turn over
+       the top card of the draw pile into the common area
+**** Action Phase
+     Now players in turn order take as many actions as they wish:
+     * Sow vegetables as seeds
+     * Buy vegetables in the shop
+     * Sell vegetables to the shop
+     * Trade vegetables at a market stall
+     * Play or discard a helper
+     * Deliver to a regular customer
+     * Deliver to a casual customer
+     * Buy a two pack (only once per turn)
 
+     At the end of the action phase:
+     1. Store vegetables in your storehouse
+     2. Move along the path of prosperity
+        1. First move costs 1 cash
+        2. Each other move costs the value of the space being moved to
+*** Loans
+    * You can take a loan at any time
+    * Each loan gives you 5 cash
+    * Each loan will move you back one space on the path of prosperity at the
+      end of the game
+    * There are no ways to get rid of loans
 ** Setup
+   Each player gets
+   * A game board
+   * 10 cash
+   * 1 Home field, 1 storehouse, 1 turn summary, 8 private fields
+   * 1 scoring meeple and vegetables for their market
+
+   Then beginning with the starting player, each buys a vegetable to plant in
+   their home field
+   * Only vegetables shown on the home field are allowed
+   * No more than 2 players can plant the same type of vegetable

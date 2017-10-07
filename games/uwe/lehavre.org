@@ -9,22 +9,28 @@
 
    Wealth comes from:
    * Value of your buildings that you own
-   * Money on hand
+   * Value of special buildings (like the bank) that have a plus icon
+   * Money on hand - 7 francs for each unpaid loan
 ** Structure
-*** Each Round
+*** Each round
     * 7 turns, clockwise around the table
     * Each turn you place your ship on the next free ship circle
     * You add to whatever resource offer is shown on that space
-    * You then take your action:
+    * You then take your action by doing one of the following:
       1. You can take all of the resources on one of the offers
       2. You may use a building with your worker disk
-*** End of Round
+    * You can also buy and sell any number of buildings at any time on your turn
+*** End of round
     At the end of the round we do the following steps:
     * Possibly have a harvest:
       * If you have at least one grain, get another
       * If you have at least two cows, get another
     * Feed your workers based on the value on the round card
+    * The town might construct a new building
     * Round card becomes a ship
+*** After last round
+    Each player takes ONE more main action (no buying or selling) and players
+    may use a building that is already in use
 ** Setup
    1. Each play takes a ship, a player marker and a summary card
    2. Place the 7 supply tiles face down on their spaces randomly
