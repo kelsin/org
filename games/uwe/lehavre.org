@@ -26,3 +26,9 @@
     * Feed your workers based on the value on the round card
     * Round card becomes a ship
 ** Setup
+   1. Each play takes a ship, a player marker and a summary card
+   2. Place the 7 supply tiles face down on their spaces randomly
+   3. Based on the game type set up the resources and put out starting offers
+   4. Based on game type give players starting resources
+   5. Setup buildings
+   6. Setup round cards
