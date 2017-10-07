@@ -1,6 +1,7 @@
 * Merkator
 ** Notes
    * Deviates from farming, and his normal resources
+   * Currently the lowest rating and rank of all of the big box games
    * Gets variability from the contracts you have and special buildings /
      bonuses that you get
    * New mechanic where you can follow people on their turns
