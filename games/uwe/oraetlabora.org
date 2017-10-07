@@ -7,4 +7,13 @@
    * Has two modes of play: Ireland and France
 ** Goals
 ** Structure
+*** Resources
+    * Whenever you get resources, the amount that you get is where that resource
+      is on the rondel, this is shared between players
+    * You can use the joker resource instead of the real resource if you need
+*** Each Turn
+    * At the begginning of each turn you get all of your workers back IF they are
+      all currently used
+    * When building a new building, if your Prior is not currently used, you can
+      use him on the building for an immediate (and free) building action
 ** Setup

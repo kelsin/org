@@ -1,9 +1,27 @@
 * Glass Road
 ** Notes
-   * Second use of the Rondel
-   * Gets variability from the card play and which buildings are available
+   * Second use of the Rondel (after Ora et Labora), but in a very different way
    * Released at the same time as Caverna so often overlooked
+   * Much faster than most of his other games, box advertises 20 min per player
+   * Gets variability from the card play and which buildings are available
+   * Goal isn't always to clear and use up all of your land!
    * I've never played!
 ** Goals
 ** Structure
+*** Resources
+    * Whenever you need to spend or gain a resource you move it on your rondel
+    * Two of the resources are available on both rondels, which you choose is up
+      to you
+    * When the spinner on the rondel can move, it does, this DOES lead to wonky
+      stuff
+*** Buildings
+    * Three types:
+      * Immediate buildings that do an affect immediate
+      * Buildings that give you a passive action
+      * Buildings that score points at the end of the game based on other parts
+        of the game
+*** Rounds
+    * Each round you pick 5 cards from your 15 (all players have the same cards)
+      to be your hand
+    * You all play
 ** Setup

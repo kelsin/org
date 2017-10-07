@@ -6,5 +6,14 @@
    * Gets variability from which buildings are available
    * I've never played!
 ** Goals
+   The goal is to have the most points at the end of the game
+
+   Almost all point sources are printed on the board
 ** Structure
+*** 9 Half-Years
+    * 5 Summer/Fall and 4 Winter/Spring
+    * Each player gets 4 actions during each half year
+    * Only one action each half year is allowed to be from the wrong side
+    * Start player passes unless that player takes an action from the wrong side
+      of the board and gives us first player
 ** Setup

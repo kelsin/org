@@ -5,5 +5,11 @@
    * Highest rated game (currently) on Board Game Geek
    * I've only played once!
 ** Goals
+   The goal is to have the best farm and cave after 12 rounds
+
+   Points for many things:
+   * Rooms in your cave
+   * Animals you own
+   * Resources in the fields
 ** Structure
 ** Setup
