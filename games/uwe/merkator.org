@@ -5,6 +5,7 @@
    * Gets variability from the contracts you have and special buildings /
      bonuses that you get
    * New mechanic where you can follow people on their turns
+   * I have never played!
 ** Goals
    Have the most wealth when the time track runs out
 
