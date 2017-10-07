@@ -5,11 +5,37 @@
    * Highest rated game (currently) on Board Game Geek
    * I've only played once!
 ** Goals
-   The goal is to have the best farm and cave after 12 rounds
+   The goal is to be the dwarf with the most gold points at the end of the game
 
    Points for many things:
-   * Rooms in your cave
-   * Animals you own
-   * Resources in the fields
+   * Each animal is worth 1 point (-2 for each type you don't have)
+   * Pastures are worth printed points
+   * Vegetables, Rubies, and Gold are worth 1 point each
+   * Furnishing tiles are worth printed points (-1 for each unused cave space)
+   * Mines are worth printed points
+   * Each dwarf is worth 1 point
+   * Grain is worth 1/2 point each (rounded up)
 ** Structure
+   The full game is 12 rounds with 5 phases each
+*** Add new action space
+*** Replenish resource spaces
+*** Work phase
+    Each player in turn order places a dwarf and takes an action until all
+    dwarfs have been used
+*** Return home
+*** Harvest time
+    1. Collect grains and vegetables from fields
+    2. Feed your family
+    3. Breed animals
 ** Setup
+   * Each player gets a home board, 5 dwarfs and 3 stables
+   * Each player gets 2 different overview cards
+   * Each player gets food:
+     1. Starting player gets 1 food
+     2. 2nd player gets 1 food
+     3. 3rd player gets 2 food
+     4. All others get 3 food each
+   * Shuffle harvest markers and place on rounds 6-12
+   * Add additional game boards if needed based on player count
+   * Put all full game furnishing tiles on their proper boards
+   * Set out the action spaces
