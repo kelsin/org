@@ -7,6 +7,45 @@
 ** Goals
    Have the most wealth when the time track runs out
 
-   * Different actions take different amounts of time on the time track
+   Scoring:
+   * Each contract on a player board is worth it's value in talors
+   * Each contract off the board scores half of it's worth (no rounding)
+   * VPs from building cards
+   * Time counters are a tie-breaker
 ** Structure
+*** A Player's Turn
+**** Investment
+     * Players can sell contracts
+       * Must sell if you have 6 or more
+       * May not sell last card
+     * Players can buy bonus cards and/or building cards
+**** Traveling
+     Player chooses a place to travel and places the Merkator token then (can be
+     the same place the current token is and is still considered a new
+     travel).
+
+     1. Take all goods from that location and any bonus goods you have access to
+     2. Place new goods on locations based on the rules
+     3. Pay or take time counters
+     4. Loss of goods check (we aren't playing with this rule)
+**** Fulfill contracts
+     1. A player may return all goods matching a current location contract to
+        the supply
+     2. The reward in a contract of the next level up
+
+     The current contract is kept
+**** Joining Travels
+     All other players may join in this turn.
+
+     * Pay the main player 2 time tokens for a major location and 1 for a minor
+     * Fulfill contracts as normal
+     * Only take the smaller value of bonus cards
+*** Final Turn
+    When one of the following happens:
+    * A player fulfills a level 10 contract
+    * Last time counter is taken from the chart
+
+    Each player now gets one more final action
+    * Forced investment doesn't happen
+    * Players get time counters from the supply
 ** Setup
