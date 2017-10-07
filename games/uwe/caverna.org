@@ -17,16 +17,16 @@
    * Grain is worth 1/2 point each (rounded up)
 ** Structure
    The full game is 12 rounds with 5 phases each
-*** Add new action space
-*** Replenish resource spaces
-*** Work phase
-    Each player in turn order places a dwarf and takes an action until all
-    dwarfs have been used
-*** Return home
-*** Harvest time
-    1. Collect grains and vegetables from fields
-    2. Feed your family
-    3. Breed animals
+   1. Add new action space
+   2. Replenish resource spaces
+   3. Work phase
+      Each player in turn order places a dwarf and takes an action until all
+      dwarfs have been used
+   4. Return home
+   5. Harvest time
+      1. Collect grains and vegetables from fields
+      2. Feed your family
+      3. Breed animals
 ** Setup
    * Each player gets a home board, 5 dwarfs and 3 stables
    * Each player gets 2 different overview cards
