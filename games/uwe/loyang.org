@@ -4,6 +4,7 @@
      solo variants).
    * Gets variability from the cards used. In all game modes these cards are
      drafted in some way.
+   * I've only played 2 times
 ** Goals
    Goal is to be the most properous vegetable trader at the end of the game
 

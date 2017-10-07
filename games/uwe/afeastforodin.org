@@ -5,7 +5,7 @@
    * Attempts to emulate realistic vikings, not fantasy
    * Spatial puzzle aspect that was started in Patchwork and continued in
      Cottage Garden
-   * I've played about 3 times
+   * I've played 2 times
 ** Goals
 ** Structure
 ** Setup
