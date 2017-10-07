@@ -8,7 +8,19 @@
 ** Goals
    The goal is to have the most points at the end of the game
 
-   Almost all point sources are printed on the board
+   Almost all point sources are printed on the board:
+   * Finish your dike
+   * Build buildings
+   * Get animals, stalls, and stables
+   * Travel to neighboring cities
+   * Dehydrate the moors and cultivate the peat
+   * All resources get you points if you have enough
+   * Linen, wool, and leather are worth points, and you can upgrade them for
+     even more
+   * Upgrade wood and clay (timber and bricks) are worth points
+   * Add forests and parks to your land
+   * Build plows, peat boats, and vehicles
+   * Upgrade your tools
 ** Structure
 *** 9 Half-Years
     * 5 Summer/Fall and 4 Winter/Spring
@@ -16,4 +28,28 @@
     * Only one action each half year is allowed to be from the wrong side
     * Start player passes unless that player takes an action from the wrong side
       of the board and gives us first player
+    * Each half-year has 3 phases:
+      1. Preperations
+         Place works on the appropriate work spaces
+      2. Work Phase
+         Take turns placing workers on empty action spaces
+      3. Inventorying
+         * November:
+           1. Empty vehicles
+           2. Milking
+           3. Harvest
+           4. Sustenance
+              Pay 3 food and  2 peat
+         * May:
+           1. Empty vehicles
+           2. Baby animals
+           3. Sheering
+           4. Sustenance
+              Pay 3 food
+         * Move the half-year marker
 ** Setup
+   * Fill up the supply board
+   * Setup the year marker and player pieces
+   * Setup buildings
+   * Setup each homeboard as depicted on the board
+   * Each player gets 4 wood, 4 clay, and 3 peat
