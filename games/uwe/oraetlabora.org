@@ -2,18 +2,54 @@
 ** Notes
    * First introduction of the Rondel
    * Game is hard to get a copy of at the moment
+   * Has two modes of play: Ireland and France
    * No variability (like Caverna), big sandbox!
    * I have not ever played this game!
-   * Has two modes of play: Ireland and France
 ** Goals
+   The goal is to have the highest score at the end of the game:
+   * Add up all points on your good tiles
+   * Add the economic value of all buildings and settlements
+   * Score settlements using dwelling values
 ** Structure
+   The game plays over 25 rounds
+
 *** Resources
     * Whenever you get resources, the amount that you get is where that resource
       is on the rondel, this is shared between players
     * You can use the joker resource instead of the real resource if you need
-*** Each Turn
-    * At the begginning of each turn you get all of your workers back IF they are
-      all currently used
-    * When building a new building, if your Prior is not currently used, you can
-      use him on the building for an immediate (and free) building action
+*** Course of a Round
+    1. At the begginning of each turn you get all of your workers back IF they
+       are all currently used
+    2. Turn the production wheel one space
+    3. Check for settlement phase
+    4. Each player gets one action (clockwise order) and then the starting
+       player gets a second action
+    5. Starting player passes to the next player
+*** Player Actions
+    * Use a building
+      * Use your own clergymen
+      * You can issue a work order to another player
+        * This costs 1 coin
+        * Later in the game (once Wine or Whiskey is being made) this changes to 2 coin
+        * Can instead pay 1 wine or whiskey to the supply
+    * Fell trees or cut peat
+    * Build a building
+      * Can immediately use your prior to use this building right away
+
+    The following actions can be done as many times during your turn as you want:
+    * Turn grain into straw
+    * 1 coin to 5 coins (and vice versa) or wine/whiskey into coins
+    * Buy landscapes
+*** Settlement Phase
+    1. Move building marker to next settlement phase
+    2. Each player may build a max of 1 settlement from their supply
+    3. Distribute the current letter's pile of buildings and settlements
+*** 25th Bonus Round
+    * Each player gets his prior back
+    * Each player does one final action
+      * Can build or use one building
+      * Buildings being occupied don't matter
+      * Can use other people's buildings without a work order with your prior
+    * Then last settlement phase
+
 ** Setup
