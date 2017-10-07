@@ -7,7 +7,11 @@
    * Goal isn't always to clear and use up all of your land!
    * I've never played!
 ** Goals
+   The goal is to have the most value in your buildings by the end of 4 building
+   periods
 ** Structure
+   The game consists of 4 building periods with 3 rounds each
+
 *** Resources
     * Whenever you need to spend or gain a resource you move it on your rondel
     * Two of the resources are available on both rondels, which you choose is up
@@ -16,12 +20,28 @@
       stuff
 *** Buildings
     * Three types:
-      * Immediate buildings that do an affect immediate
-      * Buildings that give you a passive action
+      * Immediate buildings that provide an one-time effect
+      * Processing buildings that allow you to process resources
       * Buildings that score points at the end of the game based on other parts
         of the game
 *** Rounds
     * Each round you pick 5 cards from your 15 (all players have the same cards)
       to be your hand
-    * You all play
+    * You all play one card face down on the table
+    * In player order you reveal your cards
+      * If someone else has the same card in their hand (not on the table face
+        down) they must reveal it if they have a space free on their board
+      * If someone else revealed you each do one of the two actions on the card
+      * If no one else revealed you get to do both actions in any order
+    * After three rounds players might have cards in hand that they didn't use,
+      that's fine
+    * At the end of three rounds, pass the start player and refill buildings
+      * In a 3 player game pass the start player to the player with the fewest
+        buildings on their board
+*** Anytime Actions
+    * You may use a processing building's action at any time (including doing
+      wheel rotations based on the results)
+    * You may remove landscape tiles (pits, groves, and ponds)
 ** Setup
+   * Each player gets 15 specialist cards
+   * Each player gets a rondel and home board
