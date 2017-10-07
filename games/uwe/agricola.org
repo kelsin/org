@@ -1,0 +1,39 @@
+* Agricola
+** Notes
+   * Uwe's first large game
+   * Dethroned Puerto Rico as the number 1 game on Board Game Geek after a LONG
+     reign
+   * Seen as one of the most brutal of his games, hard to feed your family
+   * Gets variability from the decks that you use for minor upgrades and
+     occupations
+   * I've played this game the most, but still only about 10 times total
+** Goals
+   The goal is to have the best farm after 12 rounds
+
+   Points for many things:
+   * Wheat and Vegetables (in ground or above)
+   * Sheep, Pigs, and Cows
+   * Negative points for unused farmland
+   * Points for house tiles, more for upgraded (clay and stone)
+   * Points for family members
+   * Negative points for beggar cards
+   * Points for upgrades and occupations
+** Structure
+*** 12 Rounds
+    * Clockwise (starting with starting player) we place one worker at a time on
+      an action space
+    * Immediately take that action
+    * Continue to the next person until all workers are placed
+    * If you are out of workers you don't get any more actions
+    * Each round resources spaces get more resources and one new action is added
+      to the board
+*** Harvest after round 4, 7, 9, 11, and 12
+    * First get vegetables or wheat from any fields with plants in them
+    * Then feed family. Each member needs 2 food, except newborns (from the
+      previous round only) that need 1
+    * Breed animals
+** Setup
+   * Each player gets a board and player colors
+   * Each player gets two wood houses on their board
+   * Shuffle the action cards and lay them face down on their spaces
+   * Deal each player 7 occupations and 7 minor upgrades

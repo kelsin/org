@@ -1,0 +1,12 @@
+* Merkator
+** Notes
+   * Deviates from farming, and his normal resources
+   * Gets variability from the contracts you have and special buildings /
+     bonuses that you get
+   * New mechanic where you can follow people on their turns
+** Goals
+   Have the most wealth when the time track runs out
+
+   * Different actions take different amounts of time on the time track
+** Structure
+** Setup

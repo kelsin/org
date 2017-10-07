@@ -1,0 +1,10 @@
+* Fields of Arle
+** Notes
+   * Only 1 or 2 player game
+   * Based on Uwe's hometown and where he grew up
+   * Uses upgradable resources like Le Havre and Ora et Labora
+   * Gets variability from which buildings are available
+   * I've never played!
+** Goals
+** Structure
+** Setup

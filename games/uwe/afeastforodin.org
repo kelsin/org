@@ -1,0 +1,11 @@
+* A Feast for Odin
+** Notes
+   * Uses MANY upgradable resources (like Le Havre, Ora et Labora, and Fields of
+     Arle)
+   * Attempts to emulate realistic vikings, not fantasy
+   * Spatial puzzle aspect that was started in Patchwork and continued in
+     Cottage Garden
+   * I've played about 3 times
+** Goals
+** Structure
+** Setup

@@ -1,0 +1,28 @@
+* Le Havre
+** Notes
+   * First introduction of upgradable resources
+   * Gets variability from the order of resource offers, order of building
+     proposals, and special buildings available
+   * I've only played this game solo in order to practice the rules!
+** Goals
+   The goal is to have the most wealth at the end of the game
+
+   Wealth comes from:
+   * Value of your buildings that you own
+   * Money on hand
+** Structure
+*** Each Round
+    * 7 turns, clockwise around the table
+    * Each turn you place your ship on the next free ship circle
+    * You add to whatever resource offer is shown on that space
+    * You then take your action:
+      1. You can take all of the resources on one of the offers
+      2. You may use a building with your worker disk
+*** End of Round
+    At the end of the round we do the following steps:
+    * Possibly have a harvest:
+      * If you have at least one grain, get another
+      * If you have at least two cows, get another
+    * Feed your workers based on the value on the round card
+    * Round card becomes a ship
+** Setup

@@ -1,0 +1,290 @@
+#+TITLE: Teach Katherine Vim for the Greater Good
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/
+#+REVEAL_HLEVEL: 2
+#+REVEAL_DEFAULT_FRAG_STYLE: appear
+#+REVEAL_THEME: night
+#+REVEAL_EXTRA_CSS: overrides.css
+#+REVEAL_HIGHLIGHT_CSS: https://highlightjs.org/static/demo/styles/tomorrow-night-eighties.css
+#+REVEAL_HIGHLIGHT_CSS: https://highlightjs.org/static/demo/styles/solarized-dark.css
+
+#+REVEAL_MULTIPLEX_ID: b1cebc170c468298
+#+REVEAL_MULTIPLEX_SECRET: 15038239910987594287
+#+REVEAL_MULTIPLEX_URL: http://192.168.13.88:3000
+#+REVEAL_MULTIPLEX_SOCKETIO_URL: http://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.min.js
+
+#+REVEAL_PLUGINS: (highlight multiplex)
+#+OPTIONS: toc:1
+#+OPTIONS: num:nil
+#+OPTIONS: timestamp:nil
+
+* Background
+** History
+*** [[https://en.wikipedia.org/wiki/Ed_(text_editor)][ed]]
+    #+ATTR_REVEAL: :frag (appear)
+    * Written by Ken Thompson
+    * Line Oriented
+    * Part of standard Unix
+    * Used regular expressions
+    * Comedy: [[https://www.gnu.org/fun/jokes/ed.msg.html][Ed, man! !man ed]]
+*** [[https://en.wikipedia.org/wiki/Ex_(text_editor)][ex]]
+    #+ATTR_REVEAL: :frag (appear)
+    - Written by Bill Joy
+    - /EXtended/
+    - Part of standard Unix
+*** [[https://en.wikipedia.org/wiki/Vi][vi]]
+    #+ATTR_REVEAL: :frag (appear)
+    - Written by Bill Joy
+    - Part of standard Unix
+    - Named from the ex command ~visual~
+    - Visual mode by default
+    - Ex mode still included!
+*** [[https://en.wikipedia.org/wiki/Vim_(text_editor)][Vim]]
+    #+ATTR_REVEAL: :frag (appear)
+    - Written by Bram Moolenaar
+    - /Vi IMproved/
+    - Extensible via vimscript
+    - Charityware
+      - Free to distribute
+      - Encouraged to donate to [[http://iccf-holland.org/][ICCF]]
+*** Keyboard
+    - Vi programmed on an [[https://en.wikipedia.org/wiki/ADM-3A][ADM-3A]]
+    #+ATTR_HTML: :class plain
+    [[./images/ADM-3A-Keyboard.jpg]]
+** Emacs and Evil
+   #+ATTR_REVEAL: :frag (appear)
+   - [[https://www.emacswiki.org/emacs/Evil][Evil-mode]] emulates vim in Emacs
+   - Just know it's possible
+   - Most would use tramp to remote edit
+** TMux / Screen
+   #+ATTR_REVEAL: :frag (appear)
+   - Lots of fancy features
+     #+ATTR_REVEAL: :frag (appear)
+     - Split screen
+     - Saving sessions
+     - Tabs / Notifications
+   - TMux is newer
+   - Worth learning
+* Setting Up
+** Installation
+   #+ATTR_REVEAL: :frag (appear)
+   - Linux
+     - Install a ~vim~ package
+   - Windows
+     - [[http://www.vim.org/download.php/#pc][Installer]]
+   - Mac OSX
+     - ~brew install vim~
+     - ~brew cask install macvim~
+** Plugins
+*** Old School
+    - ~$VIMRUNTIME=~/.vim~
+    - Vim uses special folders
+      - autoload
+      - colors
+      - doc
+      - ftplugin
+      - indent
+      - keymap
+      - plugin
+      - /etc/
+*** Pathogen
+    - Tim Pope
+    - Full runtime in ~$VIMRUNTIME/bundles~
+*** Vim-plug
+    - Automate downloading
+    - List plugins in ~~/.vimrc~
+    #+BEGIN_SRC vim
+call plug#begin()
+
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
+    #+END_SRC
+** Startup Files
+*** My Vimrc
+    [[https://github.com/kelsin/dotfiles/blob/master/vim/.vimrc][Kelsin .vimrc]]
+    - Plugins
+    - Options
+    - Bindings
+* Modal Editing
+  #+ATTR_REVEAL: :frag (appear)
+  - Normal mode
+  - Insert mode
+  - Visual mode
+  - Command mode
+** Normal mode
+   #+ATTR_REVEAL: :frag (appear)
+   - Default mode for Vim
+   - Hitting ~esc~ enters Normal
+   - Insert: ~a~ and ~i~
+   - Visual: ~v~
+   - Command: ~:~
+** Insert mode
+   #+ATTR_REVEAL: :frag (appear)
+   - Most keys enter themselves
+   - ~esc~ or ~Ctrl-[~ to exit
+   - Uses ~Ctrl~ to access features
+** Visual mode
+   #+ATTR_REVEAL: :frag (appear)
+   - Used for selecting items
+   - Same editing as Normal mode
+     - Works on selection
+     - Commands default to selection
+   - Can select by character, line, or block
+** Command mode
+   #+ATTR_REVEAL: :frag (appear)
+   - Hit ~:~ in Normal or Visual mode to enter
+   - Type and command and run with ~RET~
+* Commands
+** Basic Commands
+   | Command               | Description        |
+   |-----------------------+--------------------|
+   | ~:e <file>~           | Edits a file       |
+   | ~:q~                  | Quits Vim          |
+   | ~:w~                  | Saves current file |
+   | ~:wq~ or ~:x~ or ~ZZ~ | Writes and quits   |
+** Forcing
+   - Adding ~!~ means even if current file is not saved
+     | Command      | Description          |
+     |--------------+----------------------|
+     | ~:e! <file>~ | Force edits new file |
+     | ~:q!~        | Force quits Vim      |
+* Motions and Operators
+  ~<number><operator><motion>~
+  - The first number repeats the command
+  - No operator will just move the cursor
+  - Operator will affect from current position to new position
+** Operators
+*** Basic Operators
+    | Operator | Description                  |
+    |----------+------------------------------|
+    | ~c~      | Change                       |
+    | ~d~      | Delete                       |
+    | ~y~      | Yank                         |
+    | ~!~      | Run through external program |
+*** Case Operators
+    | Operator | Description    |
+    |----------+----------------|
+    | ~g~~     | Swap case      |
+    | ~gu~     | Make lowercase |
+    | ~gU~     | Make uppercase |
+*** Indent Operators
+    | Operator | Description               |
+    |----------+---------------------------|
+    | ~=~      | Ident (filetype specific) |
+    | ~>~      | Shift right               |
+    | ~<~      | Shift left                |
+    | ~gq~     | Text Format               |
+** Motions
+*** Simple Motions
+    | Motion    | Description                |
+    |-----------+----------------------------|
+    | ~h,j,k,l~ | Left, Down, Up, Right      |
+    | ~0~       | To start of line           |
+    | ~^~       | To first character of line |
+    | ~$~       | End of the line            |
+    | ~gg~      | To first line of the file  |
+    | ~G~       | To last line of the file   |
+*** Search Motions
+    | Motion    | Description                             |
+    |-----------+-----------------------------------------|
+    | ~f{char}~ | To first occurance of ~{char}~          |
+    | ~F{char}~ | To first previous occurance of ~{char}~ |
+    | ~t{char}~ | To before first occurance of ~{char}~   |
+    | ~T{char}~ | To after previous occurance of ~{char}~ |
+*** Word Motions
+    | Motion | Description     |
+    |--------+-----------------|
+    | ~w~    | Forward a word  |
+    | ~W~    | Forward a WORD  |
+    | ~e~    | End of word     |
+    | ~E~    | End of WORD     |
+    | ~b~    | Backward a word |
+    | ~B~    | Backward a WORD |
+*** Text Motions
+    | Motion | Description                 |
+    |--------+-----------------------------|
+    | ~(,)~  | Forward/Backword sentences  |
+    | ~{,}~  | Forward/Backword paragraphs |
+*** Text Object Motions
+    ~a~ or ~i~ selects "a thing" or "an inner thing"
+    | Motion | Description    |
+    |--------+----------------|
+    | ~w,W~  | A word or WORD |
+    | ~s~    | A sentence     |
+    | ~p~    | A paragraph    |
+*** Text Block Motions
+    Also following ~a~ or ~i~
+    | Motion | Description        |
+    |--------+--------------------|
+    | ~<,>~  | Enclosing ~<>~'s   |
+    | ~(,)~  | Enclosing ~()~'s   |
+    | ~[,]~  | Enclosing ~[]~'s   |
+    | ~{,}~  | Enclosing ~{}~'s   |
+    | ~t~    | Enclosing html tag |
+*** String Motions
+    Also following ~a~ or ~i~
+    | Motion | Description    |
+    |--------+----------------|
+    | ~'~    | Enclosing ~''~ |
+    | ~"~    | Enclosing ~""~ |
+    | ~`~    | Enclosing ~``~ |
+* Other Features
+** Registers
+   #+ATTR_REVEAL: :frag (appear)
+   - Registers are ~"~ followed by ~0-9,a-z~ and others
+   - By default yanking / deleting goes to ~""~
+   - Per file yanks / deletes go to 0 -> 1 -> 2 -> /etc/
+   - ~a-z~ are for you to use. Using ~A-Z~ appends!
+** Special Registers
+   | Register | Use                |
+   |----------+--------------------|
+   | ~"_~     | Black hole         |
+   | ~"/~     | Last search        |
+   | ~".~     | Last inserted text |
+   | ~"%~     | Current file name  |
+   | ~":~     | Last command used  |
+** Macros
+   #+ATTR_REVEAL: :frag (appear)
+   - ~q<a-z>~ starts recording into a register
+   - ~q~ to stop recording
+   - ~@<a-z>~ to play back the macro
+   - Can also read from the register as normal
+** Search
+   #+ATTR_REVEAL: :frag (appear)
+   - ~/~ starts to search
+   - Full regexp searches
+   - Search and replace via ~:~ commands
+   - Search for current word via ~*~
+** Misc
+   #+ATTR_REVEAL: :frag (appear)
+   - Window splits (horizontal and vertical)
+   - Tabs
+   - Repeat last command: ~.~
+   - Folding
+   - Tag files and searching
+** Plugins to look at
+   #+ATTR_REVEAL: :frag (appear)
+   - [[https://github.com/junegunn/vim-plug][vim-plug]], [[https://github.com/VundleVim/Vundle.vim][Vundle]], or [[https://github.com/tpope/vim-pathogen][pathogen]]
+   - [[https://github.com/scrooloose/nerdtree][NERDTree]], [[https://github.com/tpope/vim-vinegar][vinegar]], [[https://github.com/jeetsukumaran/vim-filebeagle][filebeagle]], [[https://github.com/Shougo/vimfiler.vim][vimfiler]], or [[https://github.com/justinmk/vim-dirvish][dirvish]]
+   - [[https://github.com/ctrlpvim/ctrlp.vim][ctrlp]], [[https://github.com/junegunn/fzf.vim][fzf]], [[https://github.com/wincent/command-t][Command-T]], [[https://github.com/Yggdroot/LeaderF][LeaderF]], or [[https://github.com/Shougo/denite.nvim][denite]]
+   - [[https://github.com/vim-syntastic/syntastic][syntastic]] or [[https://github.com/w0rp/ale][ale]]
+   - [[https://github.com/tpope/vim-surround][surround]], [[https://github.com/tpope/vim-commentary][commentary]], and [[https://github.com/tpope/vim-fugitive][fugitive]]
+   - [[https://github.com/pangloss/vim-javascript][javascript]] and [[https://github.com/moll/vim-node][node]]
+* Wrapping Up
+** Resources
+*** Cheat Sheats
+    #+ATTR_REVEAL: :frag (appear)
+    - [[https://kapeli.com/dash][Dash]], [[https://velocity.silverlakesoftware.com/][Velocity]], and [[https://zealdocs.org/][Zeal]]
+    - Pick new commands each week
+    - Postit or Index cards
+*** Videos
+    #+ATTR_REVEAL: :frag (appear)
+    - [[https://www.youtube.com/watch?v=eX9m3g5J-XA][7 Habits For Effective Text Editing 2.0]]
+    - [[https://www.youtube.com/watch?v=OnUiHLYZgaA][Improving Vim Speed]]
+    - [[https://www.youtube.com/watch?v=2b1vcg_XSR8][Test-Driven Development By Example]]
+** ?'s
+** Thanks!
+   - [[https://twitter.com/kelsin5][@kelsin5]] on Twitter
+   - [[mailto:kelsin@valefor.com][kelsin@valefor.com]]
